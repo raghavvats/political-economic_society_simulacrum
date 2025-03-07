@@ -1,4 +1,10 @@
 # Environment variables
 .env
 
+# Tests & Scripts
+/tests
+/scripts
+
 !.gitkeep
+
+__pycache__/
