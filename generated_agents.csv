@@ -1,0 +1,501 @@
+id,age,income_level,years_of_education,religiosity,political_economic,political_governance,political_cultural,race_ethnicity,gender,religion,urbanization,education_style,employment_style,location
+1,22.0,58700.0,14.609542766026948,2.0,-0.4,0.7000000000000001,-0.8,hispanic,male,jewish,urban,formal k-12 + university,unemployed,New York
+2,21.0,43900.0,12.0,2.5,-0.05,-0.7000000000000001,0.2,east asian,female,christian,urban,formal k-12 + university,blue-collar,New York
+3,60.0,30000.0,15.707627136545748,5.5,0.45,-0.7000000000000001,0.6000000000000001,white,nonbinary,muslim,suburban,formal k-12 + university,entrepreneur,New York
+4,33.0,30000.0,12.315600237347091,2.0,0.1,-0.7000000000000001,-0.8,white,female,other,urban,formal k-12,white-collar,New York
+5,47.0,30000.0,15.742324739413911,5.0,-0.4,0.2,-0.8,white,female,muslim,urban,formal k-12 + university,unemployed,New York
+6,43.0,146900.0,17.46067627672261,6.5,-0.5,-0.55,0.7000000000000001,white,female,christian,urban,vocational,entrepreneur,New York
+7,35.0,30000.0,19.66941692970049,6.5,-0.2,-0.30000000000000004,-0.05,white,male,christian,suburban,formal k-12 + university,blue-collar,New York
+8,22.0,30000.0,14.732913456322061,5.5,-0.4,-0.7000000000000001,-0.25,hispanic,male,buddhist,urban,formal k-12 + university,unemployed,New York
+9,25.0,40200.0,12.616817961832014,4.5,-0.1,0.2,-0.75,black,male,christian,urban,formal k-12 + university,white-collar,New York
+10,39.0,30000.0,16.485262600225674,4.5,0.30000000000000004,0.7000000000000001,0.0,white,male,christian,suburban,formal k-12 + university,blue-collar,New York
+11,38.0,99400.0,15.923668733833436,4.5,0.35000000000000003,-0.30000000000000004,-0.30000000000000004,white,female,christian,suburban,formal k-12 + university,blue-collar,New York
+12,52.0,46500.0,14.698838815824526,2.0,-0.15000000000000002,0.45,-0.8,black,male,christian,suburban,formal k-12 + university,blue-collar,New York
+13,36.0,109700.0,12.405077020412394,7.0,0.15000000000000002,0.0,0.65,east asian,male,christian,rural,formal k-12,entrepreneur,New York
+14,33.0,30300.0,12.0,2.5,0.0,-0.65,0.75,black,nonbinary,christian,urban,vocational,white-collar,New York
+15,33.0,30000.0,13.682784387641654,6.5,-0.1,0.15000000000000002,0.45,white,male,buddhist,urban,formal k-12 + university,blue-collar,New York
+16,36.0,34300.0,12.0,8.0,-0.30000000000000004,-0.7000000000000001,-0.8,black,female,other,urban,formal k-12 + university,blue-collar,New York
+17,34.0,30300.0,13.986387872510763,3.5,0.0,-0.30000000000000004,0.4,white,female,other,rural,formal k-12,blue-collar,New York
+18,37.0,53700.0,12.0,6.0,0.15000000000000002,0.45,-0.8,white,female,christian,rural,formal k-12 + university,unemployed,New York
+19,42.0,49400.0,12.0,2.0,-0.5,-0.5,0.1,white,female,muslim,urban,formal k-12 + university,white-collar,New York
+20,42.0,53600.0,15.185654027652472,4.5,-0.45,0.25,0.4,white,male,christian,urban,formal k-12 + university,white-collar,New York
+21,60.0,85300.0,12.0,2.0,-0.35000000000000003,-0.55,-0.55,east asian,female,christian,urban,vocational,entrepreneur,New York
+22,21.0,118000.0,14.023008451561433,3.0,-0.5,-0.65,0.6000000000000001,white,female,christian,urban,formal k-12 + university,retired,New York
+23,34.0,86300.0,13.545015612435451,3.0,-0.5,-0.1,0.35000000000000003,white,female,christian,urban,vocational,retired,New York
+24,20.0,142200.0,16.412632553307713,2.5,-0.5,-0.7000000000000001,-0.75,hispanic,male,christian,urban,formal k-12 + university,blue-collar,New York
+25,33.0,30000.0,13.555199106007487,3.0,-0.5,0.55,0.55,white,female,christian,urban,formal k-12,white-collar,New York
+26,29.0,30000.0,19.050488779923576,6.0,-0.45,0.7000000000000001,-0.75,white,female,christian,suburban,formal k-12 + university,blue-collar,New York
+27,51.0,75400.0,12.0,6.0,-0.5,0.75,0.7000000000000001,hispanic,female,christian,suburban,formal k-12 + university,blue-collar,New York
+28,35.0,30000.0,16.832740977008847,2.0,-0.25,0.6000000000000001,0.1,hispanic,male,christian,urban,formal k-12 + university,white-collar,New York
+29,22.0,30000.0,12.0,2.5,0.45,0.5,0.65,hispanic,female,buddhist,urban,vocational,white-collar,New York
+30,20.0,55100.0,16.58203034616555,7.0,0.1,-0.45,-0.8,white,male,christian,suburban,formal k-12 + university,white-collar,New York
+31,23.0,60900.0,16.15363883033302,3.0,-0.5,0.6000000000000001,0.0,hispanic,male,christian,urban,formal k-12 + university,blue-collar,New York
+32,55.0,83600.0,19.934545247806398,2.0,0.25,-0.7000000000000001,-0.8,hispanic,male,jewish,suburban,vocational,white-collar,New York
+33,31.0,46400.0,14.484714880276737,4.5,-0.5,-0.7000000000000001,-0.30000000000000004,white,female,other,rural,formal k-12,blue-collar,New York
+34,41.0,52300.0,13.019206954920625,4.0,-0.05,0.6000000000000001,-0.2,east asian,female,christian,suburban,formal k-12,white-collar,New York
+35,28.0,125900.0,15.144759166035055,2.0,0.25,-0.5,-0.65,white,female,other,rural,formal k-12,retired,New York
+36,44.0,30000.0,13.38379230878624,5.0,0.30000000000000004,-0.7000000000000001,0.35000000000000003,white,male,christian,suburban,formal k-12,white-collar,New York
+37,41.0,30000.0,12.0,3.5,-0.1,-0.7000000000000001,-0.8,hispanic,male,christian,urban,vocational,unemployed,New York
+38,24.0,45600.0,12.0,2.0,-0.05,-0.2,-0.8,white,female,christian,urban,formal k-12,blue-collar,New York
+39,37.0,30000.0,12.817514556221468,2.0,-0.5,-0.35000000000000003,-0.1,white,nonbinary,buddhist,urban,vocational,blue-collar,New York
+40,43.0,30000.0,12.0,7.0,0.1,-0.2,0.55,white,female,christian,suburban,formal k-12 + university,white-collar,New York
+41,31.0,57200.0,14.631135896018842,7.0,-0.25,0.4,-0.45,white,male,christian,urban,vocational,white-collar,New York
+42,37.0,30000.0,12.0,2.0,0.15000000000000002,-0.7000000000000001,0.35000000000000003,white,male,christian,urban,formal k-12 + university,white-collar,New York
+43,33.0,48700.0,12.0,4.5,-0.5,0.0,-0.8,hispanic,male,christian,suburban,formal k-12 + university,blue-collar,New York
+44,20.0,85500.0,13.298881786265886,6.5,-0.5,-0.30000000000000004,-0.65,white,male,christian,urban,formal k-12,entrepreneur,New York
+45,25.0,48300.0,14.951032427137925,4.5,-0.30000000000000004,-0.4,-0.15000000000000002,black,male,christian,urban,formal k-12 + university,white-collar,New York
+46,60.0,53800.0,17.960249899901974,7.5,-0.1,0.4,-0.8,black,female,jewish,urban,formal k-12,white-collar,New York
+47,21.0,66800.0,13.162101709425826,3.5,-0.35000000000000003,-0.7000000000000001,0.35000000000000003,black,male,christian,suburban,vocational,blue-collar,New York
+48,33.0,71900.0,12.947124303717839,7.0,-0.5,-0.2,-0.1,white,female,christian,rural,vocational,white-collar,New York
+49,20.0,73600.0,12.0,2.0,0.15000000000000002,0.6000000000000001,-0.75,white,female,christian,suburban,formal k-12 + university,blue-collar,New York
+50,26.0,96800.0,12.0,2.0,0.35000000000000003,0.45,-0.7000000000000001,white,nonbinary,other,urban,formal k-12,white-collar,New York
+51,35.0,52500.0,17.110263809025874,2.0,-0.45,0.5,-0.2,hispanic,male,christian,suburban,vocational,white-collar,New York
+52,40.0,57000.0,15.417801648397923,6.0,-0.15000000000000002,0.05,0.2,east asian,female,christian,urban,formal k-12,retired,New York
+53,29.0,147800.0,12.680788683145282,4.5,-0.5,0.4,0.55,hispanic,male,other,suburban,formal k-12,white-collar,New York
+54,27.0,43500.0,12.0,2.0,0.35000000000000003,-0.30000000000000004,-0.4,hispanic,male,christian,rural,formal k-12 + university,white-collar,New York
+55,48.0,33000.0,19.94733509987618,7.0,0.35000000000000003,-0.05,-0.8,white,female,christian,suburban,formal k-12,entrepreneur,New York
+56,22.0,35800.0,14.245917148534506,3.0,-0.5,0.30000000000000004,-0.8,hispanic,female,christian,urban,formal k-12 + university,blue-collar,New York
+57,33.0,86300.0,12.0,5.5,-0.4,0.15000000000000002,-0.65,hispanic,female,christian,suburban,formal k-12 + university,blue-collar,New York
+58,20.0,33600.0,12.0,2.0,0.0,0.30000000000000004,0.35000000000000003,white,nonbinary,christian,urban,formal k-12 + university,white-collar,New York
+59,35.0,97900.0,12.996421282545192,2.5,-0.4,0.6000000000000001,-0.45,black,male,christian,rural,formal k-12,entrepreneur,New York
+60,30.0,68900.0,12.0,3.0,-0.5,0.45,0.6000000000000001,white,male,christian,urban,vocational,retired,New York
+61,54.0,30000.0,15.55877953758344,2.0,0.35000000000000003,-0.15000000000000002,0.1,black,male,christian,urban,vocational,unemployed,New York
+62,29.0,39600.0,17.93924548716961,7.5,0.35000000000000003,0.4,-0.8,white,female,christian,suburban,formal k-12,blue-collar,New York
+63,20.0,30000.0,12.898048859140221,7.0,-0.35000000000000003,0.55,-0.8,white,male,christian,rural,formal k-12,retired,New York
+64,36.0,30000.0,15.63176911420106,2.0,-0.5,0.05,-0.75,white,female,christian,urban,formal k-12,blue-collar,New York
+65,22.0,58900.0,12.0,3.5,-0.5,-0.45,0.5,white,female,christian,urban,formal k-12 + university,white-collar,New York
+66,20.0,58700.0,12.0,2.0,-0.35000000000000003,-0.7000000000000001,0.05,black,male,christian,rural,formal k-12 + university,white-collar,New York
+67,33.0,30000.0,12.0,2.0,-0.25,-0.6000000000000001,0.7000000000000001,hispanic,male,christian,suburban,vocational,blue-collar,New York
+68,22.0,69000.0,17.82974819983568,3.0,-0.30000000000000004,0.8,-0.8,white,male,jewish,rural,formal k-12 + university,blue-collar,New York
+69,38.0,33800.0,12.0,6.5,-0.5,0.30000000000000004,0.1,black,male,christian,rural,vocational,entrepreneur,New York
+70,58.0,37700.0,14.956603216076779,2.0,-0.05,0.05,0.8,white,female,christian,urban,formal k-12,white-collar,New York
+71,28.0,79500.0,13.559320438688585,5.0,0.4,0.65,-0.05,white,male,christian,urban,formal k-12 + university,white-collar,New York
+72,30.0,93000.0,12.0,2.5,-0.5,-0.7000000000000001,0.4,white,female,christian,suburban,formal k-12 + university,white-collar,New York
+73,22.0,39800.0,17.057342231512767,3.5,-0.1,-0.7000000000000001,-0.5,black,male,other,urban,formal k-12 + university,entrepreneur,New York
+74,35.0,45800.0,12.54234761397792,3.5,-0.5,0.05,0.2,hispanic,female,muslim,suburban,formal k-12 + university,white-collar,New York
+75,29.0,39700.0,12.599802663195163,5.5,-0.5,-0.55,0.4,white,male,christian,suburban,formal k-12 + university,white-collar,New York
+76,31.0,44500.0,18.871675512304094,3.0,0.4,0.75,-0.2,east asian,nonbinary,other,urban,formal k-12 + university,blue-collar,New York
+77,36.0,53300.0,14.61148961015666,6.0,-0.25,-0.45,0.25,white,nonbinary,hindu,suburban,formal k-12 + university,blue-collar,New York
+78,37.0,71800.0,12.0,7.5,-0.5,0.6000000000000001,-0.65,white,female,christian,urban,formal k-12 + university,unemployed,New York
+79,31.0,30000.0,13.761850101622981,2.0,0.1,0.4,-0.8,white,nonbinary,hindu,suburban,formal k-12,unemployed,New York
+80,49.0,124100.0,12.0,3.0,0.4,0.15000000000000002,-0.8,white,female,christian,urban,formal k-12 + university,blue-collar,New York
+81,32.0,33900.0,12.0,7.0,0.05,0.6000000000000001,-0.8,white,female,other,suburban,formal k-12 + university,blue-collar,New York
+82,43.0,30000.0,12.0,6.5,-0.25,0.35000000000000003,-0.05,east asian,female,christian,urban,vocational,white-collar,New York
+83,23.0,51500.0,17.319124197622127,2.0,0.15000000000000002,-0.4,-0.25,white,female,christian,suburban,formal k-12,unemployed,New York
+84,25.0,50500.0,17.98282848261858,2.0,0.25,0.2,0.1,white,female,jewish,rural,formal k-12 + university,white-collar,New York
+85,20.0,57400.0,14.41986978266225,2.0,-0.5,-0.30000000000000004,0.1,east asian,nonbinary,christian,urban,formal k-12 + university,blue-collar,New York
+86,21.0,102100.0,12.0,3.0,-0.5,0.2,0.25,white,female,christian,suburban,formal k-12 + university,blue-collar,New York
+87,51.0,49000.0,12.711304120542184,8.0,-0.15000000000000002,-0.7000000000000001,-0.25,east asian,female,other,rural,formal k-12,white-collar,New York
+88,20.0,42300.0,12.0,2.0,-0.5,0.15000000000000002,0.05,east asian,female,christian,urban,formal k-12 + university,white-collar,New York
+89,22.0,40000.0,12.0,2.0,-0.5,0.45,-0.25,white,nonbinary,christian,suburban,formal k-12,entrepreneur,New York
+90,25.0,96400.0,16.80028162358674,4.5,-0.35000000000000003,-0.7000000000000001,0.65,white,male,other,urban,formal k-12,blue-collar,New York
+91,26.0,30000.0,14.605631765839435,6.5,-0.5,-0.7000000000000001,0.1,white,female,christian,suburban,vocational,white-collar,New York
+92,27.0,30000.0,14.841534527364002,2.5,0.2,0.1,-0.8,white,female,christian,rural,formal k-12,white-collar,New York
+93,27.0,30000.0,14.109230988427669,6.0,0.0,-0.55,-0.65,black,female,christian,urban,formal k-12 + university,blue-collar,New York
+94,33.0,48800.0,16.219006962208045,2.0,-0.5,0.6000000000000001,0.0,white,female,christian,rural,formal k-12 + university,blue-collar,New York
+95,36.0,45700.0,16.040783625720806,6.0,0.4,-0.7000000000000001,0.0,black,female,christian,urban,formal k-12 + university,white-collar,New York
+96,26.0,87200.0,12.0,2.0,0.45,-0.5,0.0,white,male,other,urban,formal k-12,blue-collar,New York
+97,20.0,30000.0,12.633191530055033,4.5,-0.5,-0.30000000000000004,0.05,white,female,other,urban,vocational,white-collar,New York
+98,39.0,31700.0,18.282178067516128,3.0,-0.5,0.45,0.4,black,female,christian,rural,formal k-12 + university,blue-collar,New York
+99,58.0,30000.0,12.0,7.5,-0.5,-0.7000000000000001,-0.6000000000000001,hispanic,female,other,urban,formal k-12 + university,blue-collar,New York
+100,34.0,30700.0,14.110039780299058,3.5,-0.25,0.25,0.55,hispanic,female,christian,urban,formal k-12 + university,white-collar,New York
+101,35.0,45100.0,12.0,2.0,0.35000000000000003,-0.7000000000000001,-0.30000000000000004,white,female,christian,urban,formal k-12,blue-collar,New York
+102,20.0,147500.0,12.0,2.0,0.4,0.35000000000000003,-0.8,white,male,christian,suburban,formal k-12,white-collar,New York
+103,20.0,30000.0,12.0,2.0,-0.1,-0.1,-0.8,hispanic,female,christian,urban,formal k-12 + university,blue-collar,New York
+104,38.0,124800.0,14.529843631576961,4.0,0.0,-0.7000000000000001,-0.8,hispanic,female,christian,rural,formal k-12 + university,white-collar,New York
+105,40.0,42900.0,18.858399071510483,3.5,-0.1,-0.45,0.45,black,male,muslim,suburban,formal k-12 + university,white-collar,New York
+106,20.0,30000.0,12.961364022105087,2.0,0.1,-0.4,-0.35000000000000003,white,male,other,rural,vocational,blue-collar,New York
+107,34.0,86900.0,13.819634193239853,2.0,0.1,0.0,0.0,white,female,muslim,rural,formal k-12,white-collar,New York
+108,30.0,89900.0,12.811330583770083,7.5,-0.15000000000000002,-0.7000000000000001,-0.1,white,female,christian,rural,vocational,retired,New York
+109,36.0,47400.0,18.805534185241005,2.0,-0.15000000000000002,-0.7000000000000001,0.4,white,male,christian,urban,vocational,white-collar,New York
+110,27.0,55200.0,15.825017774176507,2.0,-0.05,0.65,-0.8,black,female,muslim,urban,formal k-12,blue-collar,New York
+111,20.0,101200.0,16.36452297547899,5.5,-0.30000000000000004,-0.30000000000000004,-0.8,east asian,female,jewish,urban,vocational,blue-collar,New York
+112,34.0,75900.0,12.0,3.5,-0.15000000000000002,-0.5,0.05,white,female,christian,urban,formal k-12,blue-collar,New York
+113,44.0,30000.0,18.761087151800567,2.0,-0.05,-0.7000000000000001,-0.8,white,female,christian,suburban,formal k-12 + university,unemployed,New York
+114,20.0,30000.0,15.371076190776499,7.5,-0.15000000000000002,-0.7000000000000001,-0.75,east asian,male,christian,rural,formal k-12,white-collar,New York
+115,20.0,30000.0,12.0,2.0,-0.4,-0.25,0.5,white,female,christian,suburban,formal k-12 + university,entrepreneur,New York
+116,21.0,79100.0,12.0,6.5,-0.5,0.75,-0.15000000000000002,black,female,christian,rural,formal k-12 + university,white-collar,New York
+117,20.0,39200.0,17.572779094064405,2.0,-0.5,0.5,-0.8,white,nonbinary,jewish,rural,formal k-12,entrepreneur,New York
+118,20.0,33800.0,17.56062694195773,2.0,-0.45,0.45,-0.8,white,female,christian,urban,formal k-12,entrepreneur,New York
+119,59.0,80300.0,12.0,2.0,-0.4,-0.7000000000000001,-0.8,east asian,male,christian,suburban,formal k-12 + university,retired,New York
+120,22.0,49000.0,16.21069871855707,2.0,-0.35000000000000003,-0.2,-0.55,white,female,christian,rural,formal k-12,blue-collar,New York
+121,38.0,57800.0,18.125095558607157,2.0,0.0,-0.30000000000000004,0.6000000000000001,white,male,jewish,suburban,formal k-12 + university,retired,New York
+122,20.0,55100.0,15.900891722146328,4.5,-0.30000000000000004,-0.45,-0.65,east asian,female,other,rural,vocational,white-collar,New York
+123,36.0,41900.0,12.0,7.5,-0.5,-0.6000000000000001,-0.05,white,female,christian,suburban,formal k-12 + university,white-collar,New York
+124,20.0,46200.0,12.0,3.0,-0.45,-0.6000000000000001,-0.8,white,female,jewish,urban,vocational,white-collar,New York
+125,30.0,42300.0,12.0,6.5,0.45,-0.7000000000000001,-0.35000000000000003,white,female,christian,rural,vocational,entrepreneur,New York
+126,27.0,135000.0,13.301271865886001,2.0,0.0,-0.4,-0.4,white,male,christian,rural,formal k-12,white-collar,New York
+127,22.0,91200.0,12.0,6.0,-0.1,0.15000000000000002,-0.55,white,female,christian,suburban,formal k-12,entrepreneur,New York
+128,31.0,103800.0,13.182437836745168,5.5,-0.1,-0.2,-0.5,white,female,christian,rural,formal k-12 + university,entrepreneur,New York
+129,36.0,51600.0,14.270822842312032,4.0,-0.4,-0.15000000000000002,0.7000000000000001,black,male,other,suburban,formal k-12 + university,white-collar,New York
+130,38.0,30000.0,12.0,2.0,0.35000000000000003,0.45,0.65,black,male,hindu,urban,formal k-12,white-collar,New York
+131,50.0,89000.0,12.668395672563003,3.5,-0.25,-0.35000000000000003,0.45,white,female,christian,rural,formal k-12 + university,unemployed,New York
+132,55.0,30000.0,12.0,3.5,-0.5,-0.7000000000000001,-0.25,black,female,hindu,rural,formal k-12 + university,entrepreneur,New York
+133,27.0,34600.0,14.529834141872023,8.0,-0.25,-0.4,-0.8,east asian,male,christian,suburban,formal k-12,white-collar,New York
+134,57.0,85300.0,18.942836037271203,2.0,-0.35000000000000003,0.30000000000000004,-0.8,black,male,christian,urban,formal k-12,white-collar,New York
+135,22.0,43100.0,12.0,3.5,-0.35000000000000003,0.7000000000000001,-0.55,hispanic,male,other,suburban,formal k-12 + university,white-collar,New York
+136,37.0,30000.0,14.686295464604449,2.0,-0.5,0.1,0.5,white,female,christian,urban,formal k-12 + university,blue-collar,New York
+137,24.0,76600.0,18.569620148157597,6.5,-0.5,-0.65,-0.05,east asian,male,jewish,rural,formal k-12,blue-collar,New York
+138,26.0,104300.0,16.26508144878208,2.0,-0.5,-0.7000000000000001,-0.6000000000000001,black,male,christian,suburban,vocational,white-collar,New York
+139,35.0,50500.0,15.659942056828466,3.5,0.2,0.8,-0.45,white,nonbinary,hindu,urban,formal k-12,blue-collar,New York
+140,36.0,30000.0,12.0,3.0,0.1,0.05,-0.8,white,female,christian,urban,formal k-12 + university,retired,New York
+141,44.0,99400.0,12.0,4.5,-0.5,-0.15000000000000002,0.6000000000000001,hispanic,male,buddhist,urban,formal k-12,blue-collar,New York
+142,26.0,30000.0,12.0,2.0,0.25,0.0,-0.8,white,male,christian,suburban,formal k-12,white-collar,New York
+143,20.0,44100.0,12.0,6.0,-0.5,-0.7000000000000001,-0.8,hispanic,male,christian,rural,formal k-12,white-collar,New York
+144,25.0,30000.0,12.0,4.0,0.30000000000000004,-0.2,0.0,white,male,buddhist,urban,formal k-12,white-collar,New York
+145,35.0,30000.0,12.0,2.0,-0.15000000000000002,-0.7000000000000001,-0.55,white,female,jewish,suburban,formal k-12,unemployed,New York
+146,36.0,45300.0,12.0,2.5,-0.25,0.7000000000000001,-0.35000000000000003,east asian,female,christian,urban,formal k-12 + university,white-collar,New York
+147,22.0,30000.0,12.0,7.5,-0.2,-0.55,0.55,black,female,other,urban,formal k-12,white-collar,New York
+148,20.0,30000.0,18.24119414623703,2.0,-0.2,-0.30000000000000004,0.05,east asian,nonbinary,christian,suburban,formal k-12 + university,white-collar,New York
+149,27.0,135500.0,19.50127551863655,8.0,0.5,0.25,0.25,black,female,hindu,urban,vocational,white-collar,New York
+150,43.0,53400.0,14.306552138782248,7.5,-0.5,0.6000000000000001,0.0,black,female,christian,rural,formal k-12 + university,white-collar,New York
+151,41.0,30000.0,18.795363563904584,5.0,-0.30000000000000004,-0.6000000000000001,-0.35000000000000003,white,male,christian,urban,formal k-12,blue-collar,New York
+152,20.0,30000.0,15.030683646304542,6.0,-0.5,-0.6000000000000001,-0.25,white,female,other,rural,formal k-12,white-collar,New York
+153,40.0,30000.0,12.0,2.0,-0.45,-0.2,0.75,white,male,christian,rural,formal k-12 + university,white-collar,New York
+154,39.0,37100.0,12.0,4.0,-0.5,0.2,0.4,white,male,christian,suburban,formal k-12 + university,white-collar,New York
+155,34.0,31000.0,12.0,6.0,-0.5,-0.7000000000000001,-0.65,white,male,christian,urban,formal k-12,blue-collar,New York
+156,20.0,30000.0,15.981651234486188,6.0,-0.25,-0.5,-0.8,white,female,other,suburban,formal k-12 + university,unemployed,New York
+157,37.0,98200.0,17.987083230996106,2.0,0.30000000000000004,-0.25,0.2,east asian,female,muslim,suburban,formal k-12 + university,retired,New York
+158,20.0,33500.0,12.356186593801018,2.5,-0.35000000000000003,-0.25,-0.8,white,female,christian,suburban,vocational,retired,New York
+159,21.0,55200.0,12.0,2.5,-0.5,-0.65,0.25,black,male,muslim,suburban,vocational,white-collar,New York
+160,46.0,30800.0,12.0,4.0,-0.35000000000000003,-0.5,-0.75,black,male,christian,urban,formal k-12,retired,New York
+161,25.0,85300.0,12.913461273243314,2.0,-0.5,-0.5,0.15000000000000002,white,male,other,urban,formal k-12 + university,white-collar,New York
+162,55.0,30000.0,12.0,6.0,-0.5,-0.45,-0.1,white,male,christian,suburban,formal k-12 + university,blue-collar,New York
+163,28.0,93200.0,12.0,5.0,-0.5,0.6000000000000001,0.25,white,male,jewish,suburban,formal k-12,blue-collar,New York
+164,44.0,46000.0,18.97283354551131,2.0,0.2,-0.7000000000000001,-0.5,black,female,christian,rural,formal k-12,blue-collar,New York
+165,20.0,30000.0,19.28456163232886,5.5,-0.5,-0.25,0.75,hispanic,male,jewish,urban,formal k-12 + university,retired,New York
+166,25.0,113300.0,12.0,8.0,-0.45,0.05,-0.05,white,female,christian,suburban,formal k-12,entrepreneur,New York
+167,26.0,76900.0,19.757798287376684,6.5,-0.1,-0.7000000000000001,0.8,white,male,christian,suburban,formal k-12 + university,retired,New York
+168,35.0,30000.0,15.548818319401635,2.0,0.05,-0.7000000000000001,-0.8,black,female,buddhist,urban,formal k-12 + university,white-collar,New York
+169,20.0,139800.0,12.0,2.5,-0.5,0.75,-0.8,hispanic,female,christian,urban,formal k-12,blue-collar,New York
+170,38.0,30000.0,12.0,2.0,-0.30000000000000004,0.6000000000000001,-0.65,hispanic,female,other,urban,formal k-12 + university,blue-collar,New York
+171,38.0,30000.0,13.44203617228981,2.0,0.05,-0.7000000000000001,-0.35000000000000003,hispanic,female,muslim,rural,formal k-12 + university,white-collar,New York
+172,36.0,52500.0,14.283953585196695,2.0,-0.1,-0.05,0.7000000000000001,hispanic,female,hindu,urban,formal k-12,white-collar,New York
+173,32.0,30000.0,15.841132459942083,4.5,0.4,0.25,-0.8,black,female,jewish,suburban,vocational,white-collar,New York
+174,29.0,30000.0,12.0,2.0,-0.5,-0.7000000000000001,-0.8,white,female,christian,urban,formal k-12 + university,entrepreneur,New York
+175,41.0,69200.0,12.0,4.5,-0.1,0.15000000000000002,-0.8,white,male,other,suburban,formal k-12 + university,white-collar,New York
+176,24.0,30000.0,12.0,2.0,0.15000000000000002,-0.7000000000000001,0.5,white,male,other,suburban,formal k-12 + university,blue-collar,New York
+177,20.0,30000.0,12.886209354723938,2.0,0.0,0.55,-0.8,white,male,muslim,suburban,vocational,white-collar,New York
+178,25.0,30000.0,12.449785192812774,2.0,-0.2,-0.4,-0.8,white,male,christian,urban,formal k-12,retired,New York
+179,39.0,35000.0,17.22721031596677,4.5,-0.1,0.0,0.6000000000000001,black,male,christian,rural,formal k-12 + university,blue-collar,New York
+180,20.0,30000.0,12.078382727971816,3.0,-0.4,-0.7000000000000001,0.30000000000000004,black,male,christian,suburban,formal k-12,unemployed,New York
+181,53.0,91500.0,12.0,4.0,0.4,-0.7000000000000001,-0.2,white,male,christian,suburban,formal k-12,white-collar,New York
+182,20.0,89900.0,12.341338849255873,5.0,-0.5,-0.7000000000000001,0.8,east asian,female,christian,suburban,formal k-12 + university,blue-collar,New York
+183,36.0,127600.0,14.697457713519029,6.5,-0.2,-0.35000000000000003,0.4,black,female,christian,suburban,formal k-12 + university,unemployed,New York
+184,20.0,97300.0,12.0,3.5,-0.5,-0.45,-0.8,white,male,other,urban,formal k-12 + university,white-collar,New York
+185,39.0,30000.0,15.235270260232204,4.5,-0.5,-0.7000000000000001,-0.8,white,female,christian,suburban,formal k-12 + university,white-collar,New York
+186,37.0,35600.0,15.532191494707053,7.0,-0.05,-0.7000000000000001,-0.55,black,female,buddhist,urban,formal k-12 + university,entrepreneur,New York
+187,23.0,56300.0,12.150852975478454,2.5,-0.45,-0.2,-0.2,white,female,jewish,urban,vocational,blue-collar,New York
+188,20.0,87500.0,16.948275333480964,6.0,0.15000000000000002,0.6000000000000001,-0.8,white,male,christian,suburban,vocational,blue-collar,New York
+189,28.0,48700.0,13.216510785458805,3.0,-0.5,-0.2,0.15000000000000002,white,male,christian,urban,formal k-12,white-collar,New York
+190,36.0,37300.0,13.439081558294493,5.5,0.25,0.05,-0.8,white,male,christian,suburban,formal k-12,blue-collar,New York
+191,20.0,37200.0,12.0,2.0,-0.2,0.6000000000000001,0.35000000000000003,east asian,male,christian,rural,formal k-12 + university,white-collar,New York
+192,59.0,30000.0,19.114082294323186,2.0,0.0,-0.05,-0.8,white,male,buddhist,suburban,formal k-12 + university,blue-collar,New York
+193,20.0,30000.0,12.0,2.5,0.0,-0.65,-0.75,east asian,male,christian,suburban,formal k-12,white-collar,New York
+194,37.0,51500.0,14.08583330885292,5.5,-0.45,0.15000000000000002,-0.30000000000000004,white,nonbinary,christian,urban,formal k-12 + university,blue-collar,New York
+195,36.0,59800.0,15.50408209728488,6.0,0.4,0.0,-0.1,black,male,jewish,rural,formal k-12 + university,white-collar,New York
+196,30.0,30000.0,12.0,2.0,0.15000000000000002,-0.4,0.30000000000000004,east asian,female,christian,suburban,vocational,blue-collar,New York
+197,20.0,35000.0,12.0,7.5,-0.5,-0.7000000000000001,0.6000000000000001,white,male,jewish,urban,formal k-12 + university,white-collar,New York
+198,29.0,30000.0,12.0,2.0,0.5,-0.35000000000000003,-0.8,white,male,other,urban,vocational,white-collar,New York
+199,25.0,78500.0,18.278215963937658,4.5,0.25,-0.6000000000000001,0.4,white,nonbinary,christian,urban,formal k-12 + university,white-collar,New York
+200,30.0,46100.0,19.07041848913154,3.5,-0.45,0.0,0.75,black,female,christian,suburban,formal k-12,blue-collar,New York
+201,28.0,65400.0,12.290801089950246,7.0,-0.5,-0.7000000000000001,-0.8,black,male,other,urban,formal k-12,unemployed,New York
+202,48.0,40400.0,12.22246221323073,8.0,-0.25,-0.6000000000000001,-0.8,white,male,christian,suburban,formal k-12 + university,blue-collar,New York
+203,40.0,32800.0,18.088763717543184,6.0,0.1,0.30000000000000004,0.35000000000000003,white,female,christian,urban,formal k-12,blue-collar,New York
+204,38.0,56500.0,18.39369039826363,2.5,-0.4,0.05,-0.30000000000000004,hispanic,female,christian,suburban,formal k-12 + university,blue-collar,New York
+205,26.0,53600.0,15.704329011900299,2.0,0.35000000000000003,-0.7000000000000001,0.55,white,female,hindu,urban,formal k-12,white-collar,New York
+206,48.0,50700.0,15.89201427179293,3.0,-0.5,0.15000000000000002,0.2,white,female,christian,urban,vocational,unemployed,New York
+207,47.0,128800.0,12.746068392337309,4.5,0.30000000000000004,-0.7000000000000001,-0.30000000000000004,white,male,other,rural,formal k-12 + university,blue-collar,New York
+208,20.0,30000.0,14.404549931800545,2.0,0.25,-0.55,0.25,black,female,christian,urban,vocational,blue-collar,New York
+209,28.0,149400.0,12.0,3.0,0.2,0.8,0.7000000000000001,hispanic,female,christian,suburban,formal k-12,white-collar,New York
+210,20.0,57300.0,12.0,2.0,0.15000000000000002,-0.4,0.4,east asian,female,hindu,urban,formal k-12 + university,white-collar,New York
+211,26.0,30000.0,17.730922192824597,2.0,-0.5,-0.15000000000000002,-0.6000000000000001,black,female,other,urban,formal k-12,unemployed,New York
+212,54.0,34700.0,15.79738605809062,7.5,-0.35000000000000003,-0.05,-0.5,east asian,female,other,rural,vocational,white-collar,New York
+213,29.0,30000.0,18.674964227537917,2.0,-0.35000000000000003,0.25,-0.2,east asian,female,christian,suburban,formal k-12,white-collar,New York
+214,30.0,46800.0,12.0,2.0,-0.1,0.4,0.1,east asian,female,buddhist,suburban,vocational,white-collar,New York
+215,27.0,53200.0,15.020754451314264,2.0,-0.5,-0.05,0.35000000000000003,white,female,christian,urban,formal k-12 + university,white-collar,New York
+216,47.0,35400.0,12.0,7.0,-0.1,-0.35000000000000003,-0.8,white,male,other,suburban,formal k-12 + university,entrepreneur,New York
+217,43.0,47200.0,12.0,7.0,-0.25,0.15000000000000002,-0.1,white,female,christian,urban,formal k-12,white-collar,New York
+218,22.0,36200.0,12.0,8.0,0.05,-0.1,-0.5,white,female,christian,suburban,formal k-12,white-collar,New York
+219,36.0,91700.0,12.0,2.0,-0.15000000000000002,-0.6000000000000001,-0.8,white,male,christian,urban,formal k-12 + university,blue-collar,New York
+220,53.0,30000.0,12.0,3.0,0.25,-0.7000000000000001,-0.8,east asian,female,other,urban,formal k-12 + university,white-collar,New York
+221,32.0,42700.0,14.383867461093734,8.0,-0.25,-0.7000000000000001,0.4,black,male,christian,urban,formal k-12 + university,blue-collar,New York
+222,27.0,30000.0,12.724549766865909,3.5,-0.5,-0.7000000000000001,-0.75,white,female,jewish,urban,formal k-12,entrepreneur,New York
+223,51.0,80100.0,15.065722439149205,7.0,-0.1,0.05,-0.6000000000000001,white,nonbinary,christian,suburban,vocational,white-collar,New York
+224,27.0,146100.0,13.379329633786107,3.5,-0.5,-0.6000000000000001,-0.8,white,male,jewish,suburban,formal k-12 + university,white-collar,New York
+225,29.0,53600.0,18.592926112542173,2.5,-0.5,0.55,0.45,black,male,christian,rural,formal k-12 + university,white-collar,New York
+226,58.0,30000.0,12.197199984913043,3.5,-0.35000000000000003,-0.4,0.25,hispanic,male,hindu,rural,formal k-12,blue-collar,New York
+227,20.0,58900.0,19.746062247636395,6.5,0.30000000000000004,-0.55,0.2,white,male,other,urban,formal k-12,blue-collar,New York
+228,23.0,116800.0,14.645558235575107,2.0,0.35000000000000003,-0.7000000000000001,-0.8,white,male,christian,urban,formal k-12 + university,blue-collar,New York
+229,36.0,39100.0,18.595541154478205,2.0,-0.35000000000000003,-0.7000000000000001,-0.25,hispanic,female,other,suburban,vocational,white-collar,New York
+230,22.0,40900.0,17.12472074723851,2.5,-0.05,0.65,-0.8,white,male,christian,suburban,formal k-12 + university,blue-collar,New York
+231,20.0,30000.0,13.59034163672758,6.0,0.45,0.75,-0.7000000000000001,white,female,christian,urban,vocational,white-collar,New York
+232,22.0,34100.0,14.135878259680274,2.0,-0.5,-0.7000000000000001,-0.05,white,male,christian,suburban,vocational,blue-collar,New York
+233,35.0,49600.0,12.0,5.0,-0.5,-0.25,-0.8,black,male,buddhist,suburban,formal k-12 + university,white-collar,New York
+234,24.0,30000.0,12.18380105707008,3.0,-0.2,-0.1,-0.8,white,male,christian,urban,formal k-12 + university,white-collar,New York
+235,35.0,57600.0,15.62795391625395,8.0,-0.4,-0.5,0.25,black,male,christian,suburban,formal k-12 + university,unemployed,New York
+236,20.0,41600.0,14.088439600119365,2.0,-0.15000000000000002,-0.4,0.0,white,female,christian,suburban,formal k-12 + university,entrepreneur,New York
+237,27.0,30000.0,14.861316993572963,6.0,-0.5,-0.30000000000000004,-0.15000000000000002,white,female,other,suburban,vocational,blue-collar,New York
+238,33.0,55600.0,12.0,7.0,-0.5,-0.7000000000000001,-0.8,white,female,christian,suburban,formal k-12 + university,white-collar,New York
+239,20.0,38300.0,12.0,7.0,-0.45,-0.15000000000000002,-0.8,white,female,christian,rural,formal k-12,retired,New York
+240,22.0,37900.0,14.116922711185625,7.5,-0.5,0.30000000000000004,-0.75,white,female,christian,urban,formal k-12,unemployed,New York
+241,39.0,139000.0,14.805675918895098,3.0,0.4,0.7000000000000001,-0.8,black,male,buddhist,urban,formal k-12,entrepreneur,New York
+242,29.0,59400.0,13.679232026715553,4.0,0.0,-0.7000000000000001,-0.25,east asian,female,christian,suburban,formal k-12,blue-collar,New York
+243,35.0,90800.0,13.6702549995334,7.5,-0.4,-0.15000000000000002,-0.8,white,male,christian,urban,formal k-12 + university,blue-collar,New York
+244,24.0,84100.0,14.622738912709641,5.5,-0.4,-0.7000000000000001,-0.75,white,male,christian,suburban,vocational,white-collar,New York
+245,34.0,30000.0,12.0,8.0,-0.45,-0.7000000000000001,0.2,white,male,jewish,suburban,formal k-12 + university,white-collar,New York
+246,20.0,89800.0,16.725831855540203,2.0,0.25,-0.25,-0.8,black,female,christian,urban,formal k-12 + university,white-collar,New York
+247,23.0,99400.0,12.0,7.5,0.25,-0.55,-0.8,white,male,christian,urban,formal k-12 + university,white-collar,New York
+248,30.0,30400.0,15.879997987452514,6.0,0.0,0.55,-0.05,white,male,christian,suburban,formal k-12 + university,white-collar,New York
+249,43.0,144300.0,15.692044594796444,5.0,0.05,-0.55,-0.8,white,male,christian,suburban,formal k-12 + university,entrepreneur,New York
+250,26.0,95600.0,13.536997571852147,5.0,-0.2,0.25,-0.8,hispanic,nonbinary,christian,suburban,formal k-12 + university,blue-collar,New York
+251,33.0,30000.0,12.0,2.0,-0.5,0.1,-0.8,white,male,other,urban,formal k-12 + university,entrepreneur,New York
+252,24.0,60800.0,12.0,8.0,0.4,-0.25,-0.8,white,female,other,urban,formal k-12 + university,white-collar,New York
+253,23.0,31600.0,12.0,2.0,0.25,-0.2,-0.8,hispanic,male,christian,urban,formal k-12 + university,white-collar,New York
+254,26.0,42500.0,19.000692581263323,2.0,-0.5,0.15000000000000002,-0.25,white,male,christian,suburban,formal k-12 + university,unemployed,New York
+255,38.0,30000.0,12.0,6.0,-0.35000000000000003,-0.55,-0.8,hispanic,male,other,urban,formal k-12,blue-collar,New York
+256,32.0,30000.0,14.864763512933909,7.0,-0.5,0.25,-0.7000000000000001,white,male,christian,suburban,formal k-12,blue-collar,New York
+257,21.0,30000.0,12.0,6.5,0.35000000000000003,-0.30000000000000004,-0.55,white,female,other,rural,formal k-12,blue-collar,New York
+258,34.0,30000.0,13.256530389528903,6.0,-0.5,-0.45,0.75,white,female,other,urban,formal k-12 + university,retired,New York
+259,28.0,37000.0,12.328410323139636,6.0,0.25,-0.6000000000000001,0.45,white,male,jewish,suburban,formal k-12 + university,blue-collar,New York
+260,20.0,30000.0,12.568292731395012,4.0,-0.5,0.75,-0.15000000000000002,white,female,christian,suburban,formal k-12,blue-collar,New York
+261,24.0,141000.0,14.835276270455518,4.5,-0.5,-0.7000000000000001,-0.8,white,female,christian,rural,formal k-12 + university,white-collar,New York
+262,25.0,30000.0,12.0,2.0,-0.5,0.55,0.8,white,male,other,suburban,vocational,unemployed,New York
+263,43.0,30000.0,12.0,2.0,-0.2,-0.15000000000000002,-0.55,white,female,hindu,suburban,formal k-12 + university,unemployed,New York
+264,38.0,64200.0,14.869198718935687,7.5,-0.5,0.15000000000000002,0.7000000000000001,white,male,christian,rural,vocational,retired,New York
+265,40.0,30000.0,16.512564487720194,7.0,0.0,-0.7000000000000001,0.7000000000000001,white,female,muslim,urban,formal k-12,white-collar,New York
+266,29.0,110100.0,12.0,2.0,-0.4,-0.65,-0.65,hispanic,male,hindu,urban,vocational,blue-collar,New York
+267,20.0,50600.0,12.013028872125151,2.0,-0.05,-0.4,-0.35000000000000003,white,female,christian,rural,formal k-12 + university,unemployed,New York
+268,44.0,44100.0,15.989701807636475,3.5,-0.2,-0.4,-0.8,white,female,muslim,suburban,vocational,blue-collar,New York
+269,22.0,53700.0,12.0,2.0,0.0,0.25,-0.55,white,male,christian,suburban,formal k-12 + university,white-collar,New York
+270,38.0,30000.0,12.0,7.0,0.0,-0.30000000000000004,-0.8,hispanic,female,christian,urban,formal k-12 + university,white-collar,New York
+271,28.0,30000.0,12.659364820445179,2.0,-0.5,-0.7000000000000001,-0.05,white,female,hindu,urban,vocational,white-collar,New York
+272,28.0,92800.0,18.045341164604316,2.5,0.1,-0.15000000000000002,-0.35000000000000003,east asian,female,muslim,suburban,formal k-12,blue-collar,New York
+273,20.0,133400.0,13.784602957047936,6.5,0.0,-0.05,0.30000000000000004,black,male,christian,suburban,formal k-12 + university,white-collar,New York
+274,21.0,35600.0,12.0,3.0,0.25,0.7000000000000001,-0.8,white,male,christian,suburban,formal k-12 + university,entrepreneur,New York
+275,20.0,30000.0,14.870460181641445,2.0,0.30000000000000004,-0.65,0.45,white,male,muslim,urban,formal k-12,blue-collar,New York
+276,22.0,39200.0,14.424311753772557,7.0,-0.25,-0.7000000000000001,-0.8,white,male,christian,suburban,formal k-12,white-collar,New York
+277,41.0,41000.0,13.5289811184792,3.0,-0.4,-0.7000000000000001,0.05,hispanic,female,christian,suburban,vocational,white-collar,New York
+278,37.0,35200.0,18.288033130696984,4.0,-0.35000000000000003,0.55,-0.35000000000000003,white,female,christian,suburban,formal k-12 + university,unemployed,New York
+279,29.0,32900.0,12.751820791032085,7.5,0.5,-0.2,-0.8,white,male,christian,suburban,formal k-12 + university,entrepreneur,New York
+280,39.0,78400.0,13.22490018209122,4.5,-0.1,0.05,-0.6000000000000001,black,female,christian,urban,vocational,blue-collar,New York
+281,36.0,30000.0,19.925744390086205,2.5,-0.30000000000000004,-0.45,-0.30000000000000004,white,female,christian,urban,formal k-12 + university,unemployed,New York
+282,23.0,30000.0,12.293552140888522,2.0,-0.25,-0.7000000000000001,-0.30000000000000004,white,male,christian,urban,formal k-12 + university,retired,New York
+283,26.0,30000.0,12.0,2.0,-0.2,0.15000000000000002,-0.75,white,male,christian,urban,formal k-12,blue-collar,New York
+284,32.0,59200.0,12.0,7.5,-0.35000000000000003,-0.05,-0.30000000000000004,white,female,christian,suburban,formal k-12,blue-collar,New York
+285,20.0,30000.0,12.0,3.0,0.0,0.25,0.6000000000000001,east asian,male,christian,urban,formal k-12 + university,entrepreneur,New York
+286,20.0,95900.0,18.478808624017887,2.0,-0.45,-0.7000000000000001,-0.5,hispanic,female,other,suburban,vocational,blue-collar,New York
+287,25.0,73200.0,12.0,7.5,0.05,0.1,-0.6000000000000001,white,female,christian,rural,formal k-12 + university,entrepreneur,New York
+288,50.0,58400.0,12.878052789382554,5.5,0.2,-0.1,-0.2,hispanic,female,christian,suburban,formal k-12 + university,entrepreneur,New York
+289,35.0,30000.0,12.0,6.5,-0.35000000000000003,0.8,-0.8,hispanic,male,christian,urban,vocational,white-collar,New York
+290,35.0,40700.0,18.00200054920556,7.0,-0.4,-0.5,-0.8,hispanic,male,other,urban,formal k-12,white-collar,New York
+291,49.0,30000.0,12.0,2.5,-0.5,-0.7000000000000001,-0.1,white,male,jewish,urban,formal k-12 + university,retired,New York
+292,20.0,36500.0,12.0,4.0,-0.5,-0.5,-0.8,white,nonbinary,hindu,urban,formal k-12 + university,white-collar,New York
+293,25.0,138000.0,15.596400217299482,2.0,-0.5,0.1,0.35000000000000003,white,male,christian,urban,vocational,white-collar,New York
+294,27.0,55200.0,14.949141480061613,4.5,-0.2,-0.7000000000000001,-0.2,black,female,christian,suburban,formal k-12,blue-collar,New York
+295,29.0,30000.0,15.425535517689962,7.5,-0.5,-0.7000000000000001,-0.8,white,female,christian,rural,formal k-12 + university,entrepreneur,New York
+296,26.0,30000.0,12.41135015664284,7.0,0.0,0.2,-0.55,white,female,other,rural,formal k-12 + university,retired,New York
+297,43.0,149300.0,12.188076819109206,6.5,-0.5,-0.25,0.25,white,male,christian,urban,formal k-12 + university,entrepreneur,New York
+298,50.0,63000.0,12.0,2.0,-0.4,0.55,0.30000000000000004,black,male,christian,rural,formal k-12 + university,retired,New York
+299,32.0,138000.0,19.5871370790642,2.0,-0.5,0.05,-0.75,white,female,christian,urban,formal k-12 + university,blue-collar,New York
+300,35.0,57900.0,12.0,4.5,0.1,-0.1,-0.8,white,male,christian,rural,formal k-12 + university,white-collar,New York
+301,20.0,30000.0,12.0,2.0,-0.4,-0.4,-0.8,white,male,christian,urban,formal k-12 + university,entrepreneur,New York
+302,23.0,73600.0,12.0,4.0,0.5,0.30000000000000004,0.55,east asian,male,buddhist,suburban,formal k-12,entrepreneur,New York
+303,20.0,30000.0,16.589693472702525,3.5,-0.2,0.2,0.4,black,male,christian,rural,formal k-12,unemployed,New York
+304,20.0,30000.0,17.514795754451086,2.5,-0.4,0.25,-0.75,black,female,christian,suburban,vocational,blue-collar,New York
+305,21.0,30900.0,14.383619197271031,2.0,0.5,-0.7000000000000001,-0.8,white,male,christian,urban,formal k-12 + university,blue-collar,New York
+306,31.0,30000.0,16.56689277827346,2.0,0.0,-0.7000000000000001,-0.8,white,female,other,suburban,formal k-12 + university,blue-collar,New York
+307,31.0,30000.0,17.341088522078074,2.0,-0.5,-0.5,-0.8,white,female,other,suburban,formal k-12,blue-collar,New York
+308,38.0,131200.0,12.0,5.0,-0.5,-0.05,-0.15000000000000002,white,male,other,suburban,formal k-12 + university,retired,New York
+309,23.0,30900.0,12.0,6.5,-0.1,0.4,-0.8,white,male,christian,urban,formal k-12,blue-collar,New York
+310,21.0,53800.0,12.0,3.5,0.4,0.15000000000000002,-0.15000000000000002,white,female,buddhist,urban,formal k-12,blue-collar,New York
+311,42.0,54900.0,19.55208138463734,3.0,-0.35000000000000003,0.75,-0.75,white,female,other,urban,formal k-12,blue-collar,New York
+312,36.0,30000.0,13.069025750151544,2.0,-0.5,0.15000000000000002,0.5,white,male,christian,suburban,vocational,blue-collar,New York
+313,25.0,32700.0,16.731410136431613,2.0,-0.4,0.35000000000000003,0.2,white,male,christian,urban,formal k-12,entrepreneur,New York
+314,20.0,58300.0,12.0,4.0,-0.4,-0.05,-0.8,hispanic,male,buddhist,urban,formal k-12,white-collar,New York
+315,55.0,31000.0,12.0,6.0,0.4,0.25,0.2,east asian,male,christian,rural,vocational,unemployed,New York
+316,30.0,56100.0,14.552688908735869,5.0,0.25,-0.4,-0.1,white,male,christian,urban,formal k-12 + university,blue-collar,New York
+317,25.0,42700.0,12.0,2.0,-0.5,-0.6000000000000001,-0.8,east asian,male,other,urban,vocational,blue-collar,New York
+318,56.0,30000.0,17.356371242003284,5.0,-0.1,-0.15000000000000002,-0.45,white,male,christian,rural,formal k-12,retired,New York
+319,20.0,57200.0,13.606820626463024,7.5,0.15000000000000002,-0.7000000000000001,-0.7000000000000001,white,male,christian,urban,vocational,blue-collar,New York
+320,32.0,38200.0,12.0,3.0,-0.5,-0.7000000000000001,0.30000000000000004,white,male,christian,suburban,formal k-12,retired,New York
+321,20.0,47800.0,18.745952597881903,4.5,-0.5,-0.6000000000000001,-0.8,black,male,christian,rural,formal k-12 + university,white-collar,New York
+322,20.0,67600.0,12.0,2.0,0.05,-0.65,-0.2,black,male,other,rural,formal k-12 + university,blue-collar,New York
+323,39.0,45600.0,12.0,2.0,0.30000000000000004,-0.30000000000000004,-0.65,white,nonbinary,hindu,urban,formal k-12 + university,blue-collar,New York
+324,20.0,115400.0,17.56767048295804,2.5,-0.1,-0.7000000000000001,-0.25,white,male,christian,urban,formal k-12 + university,white-collar,New York
+325,42.0,140100.0,18.5816008494439,7.5,0.35000000000000003,-0.30000000000000004,-0.75,hispanic,female,christian,suburban,formal k-12 + university,retired,New York
+326,20.0,92800.0,12.0,4.0,-0.5,-0.6000000000000001,-0.15000000000000002,white,female,christian,suburban,formal k-12 + university,white-collar,New York
+327,33.0,92000.0,13.843890732735296,7.5,-0.5,-0.7000000000000001,-0.8,white,male,christian,suburban,formal k-12 + university,blue-collar,New York
+328,42.0,74300.0,12.0,3.5,0.25,0.1,0.65,white,female,christian,urban,formal k-12 + university,unemployed,New York
+329,48.0,30000.0,15.046215036704076,4.0,-0.2,0.35000000000000003,0.15000000000000002,white,male,christian,urban,formal k-12 + university,white-collar,New York
+330,58.0,74500.0,15.9710184130503,5.0,-0.5,0.30000000000000004,-0.30000000000000004,white,male,christian,rural,formal k-12,white-collar,New York
+331,20.0,34200.0,12.0,6.5,0.30000000000000004,-0.7000000000000001,-0.8,east asian,female,christian,urban,formal k-12,white-collar,New York
+332,20.0,97600.0,16.619225821788664,5.5,0.15000000000000002,-0.2,-0.8,hispanic,male,christian,urban,formal k-12,blue-collar,New York
+333,28.0,71800.0,13.659097656918302,6.5,-0.05,-0.15000000000000002,0.45,white,female,buddhist,urban,formal k-12 + university,white-collar,New York
+334,35.0,50300.0,12.0,7.5,0.4,-0.35000000000000003,-0.4,black,male,christian,suburban,formal k-12,white-collar,New York
+335,23.0,48200.0,16.465757863655256,7.5,0.45,0.45,0.2,hispanic,female,christian,urban,vocational,blue-collar,New York
+336,38.0,30000.0,15.818695454480448,5.0,-0.5,-0.7000000000000001,-0.8,white,male,christian,urban,vocational,blue-collar,New York
+337,54.0,30000.0,12.0,2.0,-0.05,-0.7000000000000001,-0.8,hispanic,male,christian,suburban,formal k-12,blue-collar,New York
+338,22.0,45200.0,17.207302099634088,2.5,0.15000000000000002,-0.2,-0.8,east asian,male,other,urban,formal k-12 + university,entrepreneur,New York
+339,20.0,45000.0,12.573199306794182,3.0,0.4,0.1,-0.8,white,male,christian,suburban,formal k-12 + university,white-collar,New York
+340,20.0,30000.0,15.831231756120783,3.5,0.15000000000000002,-0.05,-0.1,white,male,christian,suburban,formal k-12 + university,blue-collar,New York
+341,20.0,57500.0,13.595301846285441,5.5,-0.4,-0.15000000000000002,-0.75,white,female,christian,urban,vocational,blue-collar,New York
+342,28.0,104500.0,12.0,3.5,-0.5,-0.2,0.75,east asian,male,other,suburban,formal k-12 + university,retired,New York
+343,33.0,103100.0,12.0,7.0,-0.5,-0.2,0.7000000000000001,hispanic,male,christian,suburban,vocational,white-collar,New York
+344,20.0,40600.0,17.530076080056837,2.0,-0.5,0.1,-0.8,white,nonbinary,christian,rural,vocational,retired,New York
+345,26.0,30000.0,17.813050124651483,4.5,-0.30000000000000004,-0.30000000000000004,-0.8,white,male,christian,urban,vocational,blue-collar,New York
+346,37.0,37500.0,13.759686645948207,2.0,-0.5,-0.1,0.5,white,male,christian,suburban,formal k-12 + university,blue-collar,New York
+347,34.0,30000.0,15.712997652913225,4.5,-0.5,0.45,-0.8,white,male,christian,suburban,formal k-12,retired,New York
+348,53.0,58600.0,15.387920013067795,3.0,-0.2,0.45,-0.65,white,female,christian,urban,formal k-12 + university,unemployed,New York
+349,57.0,96500.0,12.0,2.0,0.25,0.30000000000000004,-0.4,white,male,other,suburban,formal k-12 + university,entrepreneur,New York
+350,33.0,39500.0,12.0,7.5,0.35000000000000003,0.45,-0.5,white,female,christian,rural,formal k-12,entrepreneur,New York
+351,51.0,41400.0,12.0,2.0,-0.30000000000000004,0.75,0.45,white,female,hindu,suburban,formal k-12 + university,blue-collar,New York
+352,31.0,30000.0,15.036568761148438,2.0,-0.5,-0.7000000000000001,-0.8,white,female,christian,suburban,formal k-12 + university,retired,New York
+353,59.0,30000.0,19.88357629644536,5.0,-0.35000000000000003,0.55,-0.65,white,male,christian,urban,formal k-12 + university,retired,New York
+354,27.0,46600.0,15.74978190545777,2.0,-0.5,0.15000000000000002,-0.5,black,female,christian,urban,formal k-12 + university,white-collar,New York
+355,59.0,57100.0,13.740215852060167,6.0,0.1,0.2,0.35000000000000003,hispanic,female,christian,urban,vocational,retired,New York
+356,20.0,54900.0,16.196004498988266,2.0,0.35000000000000003,-0.25,-0.05,white,female,christian,suburban,formal k-12,white-collar,New York
+357,39.0,94600.0,12.0,7.5,-0.4,-0.1,0.45,white,male,hindu,rural,formal k-12 + university,unemployed,New York
+358,35.0,51400.0,15.463447021830362,8.0,0.45,-0.55,-0.05,white,female,christian,urban,formal k-12,blue-collar,New York
+359,20.0,30000.0,12.0,7.5,-0.15000000000000002,-0.2,-0.8,black,male,christian,rural,vocational,white-collar,New York
+360,56.0,89100.0,18.57749567554838,3.5,0.05,-0.7000000000000001,-0.8,white,female,christian,urban,formal k-12 + university,white-collar,New York
+361,29.0,30000.0,19.00830683608438,3.5,0.35000000000000003,0.25,-0.8,white,female,christian,urban,formal k-12,white-collar,New York
+362,47.0,30000.0,12.0,4.0,-0.15000000000000002,-0.7000000000000001,-0.8,east asian,male,buddhist,suburban,vocational,white-collar,New York
+363,33.0,30000.0,16.544289770761345,2.0,-0.5,0.8,-0.75,white,female,christian,rural,formal k-12 + university,white-collar,New York
+364,20.0,64700.0,12.0,4.0,-0.5,-0.55,-0.8,black,female,other,suburban,formal k-12,white-collar,New York
+365,37.0,30000.0,12.0,2.0,-0.5,-0.4,-0.8,black,female,other,urban,formal k-12,white-collar,New York
+366,30.0,81600.0,12.0,8.0,0.45,-0.7000000000000001,0.15000000000000002,white,female,christian,urban,formal k-12,blue-collar,New York
+367,36.0,30000.0,15.768465679716275,2.5,-0.15000000000000002,0.25,-0.15000000000000002,white,male,buddhist,suburban,formal k-12 + university,entrepreneur,New York
+368,39.0,47400.0,15.406205408847546,2.5,-0.05,-0.65,-0.25,white,male,christian,rural,formal k-12 + university,blue-collar,New York
+369,45.0,45300.0,12.0,2.0,0.30000000000000004,-0.45,-0.8,white,female,christian,urban,formal k-12 + university,white-collar,New York
+370,32.0,120600.0,12.0,3.0,-0.15000000000000002,0.4,-0.15000000000000002,black,male,christian,suburban,vocational,white-collar,New York
+371,39.0,31500.0,14.131081652980326,5.0,0.5,-0.7000000000000001,-0.65,hispanic,female,christian,suburban,formal k-12 + university,blue-collar,New York
+372,30.0,32000.0,12.0,5.0,0.0,-0.65,-0.35000000000000003,east asian,female,christian,urban,formal k-12 + university,retired,New York
+373,34.0,30000.0,12.0,2.0,-0.1,0.45,0.15000000000000002,white,male,jewish,rural,formal k-12 + university,blue-collar,New York
+374,53.0,30000.0,19.023820521173466,5.5,-0.1,0.5,-0.35000000000000003,white,female,hindu,rural,formal k-12 + university,unemployed,New York
+375,36.0,30900.0,12.517984528433896,7.5,-0.5,-0.55,-0.8,black,male,christian,suburban,vocational,retired,New York
+376,38.0,30000.0,19.12771069453962,2.0,0.25,-0.7000000000000001,-0.8,white,female,muslim,rural,formal k-12 + university,white-collar,New York
+377,27.0,30000.0,14.13473376445337,2.0,-0.25,-0.25,0.0,east asian,male,christian,suburban,formal k-12,entrepreneur,New York
+378,32.0,30000.0,13.545182317684885,3.5,-0.5,0.55,0.0,hispanic,female,jewish,suburban,formal k-12 + university,blue-collar,New York
+379,49.0,30000.0,18.989777872285988,3.5,0.1,-0.2,-0.45,hispanic,female,jewish,urban,formal k-12 + university,white-collar,New York
+380,21.0,37200.0,13.31888108316227,2.5,-0.5,-0.1,0.30000000000000004,white,male,other,rural,formal k-12,retired,New York
+381,21.0,30000.0,12.0,2.0,-0.4,0.55,0.45,white,male,christian,rural,formal k-12,retired,New York
+382,39.0,52100.0,12.0,5.0,-0.45,0.25,-0.7000000000000001,white,male,christian,suburban,formal k-12 + university,white-collar,New York
+383,21.0,57100.0,18.06916930893646,3.0,-0.5,-0.7000000000000001,0.7000000000000001,hispanic,female,jewish,rural,formal k-12 + university,entrepreneur,New York
+384,20.0,30000.0,12.0,3.5,-0.15000000000000002,0.2,-0.8,white,female,christian,suburban,formal k-12 + university,white-collar,New York
+385,39.0,42000.0,13.712825650814384,3.5,0.35000000000000003,-0.7000000000000001,-0.5,white,male,christian,suburban,formal k-12 + university,unemployed,New York
+386,40.0,30000.0,12.0,3.5,0.4,-0.2,-0.75,white,female,christian,rural,formal k-12,entrepreneur,New York
+387,22.0,30000.0,19.133462630185388,7.0,-0.5,-0.65,-0.25,white,male,christian,urban,formal k-12,blue-collar,New York
+388,28.0,69300.0,12.0,2.0,-0.5,0.45,0.0,white,female,christian,urban,formal k-12 + university,white-collar,New York
+389,31.0,50800.0,12.0,2.0,0.2,-0.15000000000000002,-0.55,hispanic,female,christian,urban,formal k-12 + university,entrepreneur,New York
+390,20.0,118600.0,18.42780059011919,2.0,0.2,0.0,0.55,white,female,christian,suburban,formal k-12,blue-collar,New York
+391,24.0,43900.0,12.0,2.0,-0.15000000000000002,0.55,-0.35000000000000003,white,female,christian,suburban,formal k-12,entrepreneur,New York
+392,33.0,84300.0,17.083316548118702,4.5,-0.5,-0.4,-0.55,white,male,christian,suburban,formal k-12 + university,entrepreneur,New York
+393,32.0,44400.0,13.601393042742288,4.5,-0.25,-0.7000000000000001,-0.8,white,female,christian,suburban,vocational,retired,New York
+394,37.0,67400.0,12.409394048504785,2.0,0.15000000000000002,-0.65,-0.8,white,female,christian,urban,formal k-12,blue-collar,New York
+395,20.0,70100.0,14.100353447254948,5.5,0.35000000000000003,-0.55,-0.1,hispanic,male,muslim,urban,formal k-12 + university,blue-collar,New York
+396,36.0,30000.0,12.0,2.0,0.15000000000000002,0.05,-0.65,hispanic,male,other,suburban,vocational,white-collar,New York
+397,53.0,38700.0,15.902145489372923,4.5,-0.5,-0.1,0.35000000000000003,white,female,christian,suburban,formal k-12 + university,retired,New York
+398,41.0,30000.0,18.81644527350575,6.5,0.4,-0.7000000000000001,-0.8,black,female,christian,urban,vocational,retired,New York
+399,30.0,30000.0,14.962760004705647,3.5,0.05,-0.55,0.1,white,male,muslim,suburban,formal k-12,unemployed,New York
+400,29.0,41100.0,12.80822202572792,5.0,-0.5,-0.7000000000000001,0.7000000000000001,hispanic,female,christian,rural,formal k-12 + university,white-collar,New York
+401,40.0,82100.0,18.04017115845938,5.0,0.2,-0.30000000000000004,-0.6000000000000001,white,male,christian,suburban,vocational,white-collar,New York
+402,24.0,30000.0,14.731773811774815,3.5,-0.1,0.25,-0.8,black,male,other,urban,formal k-12,white-collar,New York
+403,51.0,48100.0,16.324061815772744,4.5,-0.5,-0.7000000000000001,-0.8,white,female,christian,suburban,formal k-12,blue-collar,New York
+404,31.0,107000.0,12.0,2.0,-0.4,-0.7000000000000001,-0.5,white,male,christian,urban,formal k-12,blue-collar,New York
+405,20.0,103100.0,12.0,4.0,-0.35000000000000003,-0.35000000000000003,-0.5,black,female,christian,suburban,vocational,white-collar,New York
+406,20.0,30000.0,12.0,4.5,-0.15000000000000002,0.4,-0.8,white,female,hindu,suburban,vocational,unemployed,New York
+407,26.0,30000.0,12.0,2.0,-0.05,-0.25,0.7000000000000001,east asian,female,christian,rural,formal k-12 + university,blue-collar,New York
+408,20.0,54500.0,14.96672629148315,4.5,-0.2,-0.35000000000000003,0.55,white,male,christian,suburban,formal k-12,blue-collar,New York
+409,20.0,135500.0,12.0,3.5,-0.5,-0.6000000000000001,-0.8,white,female,buddhist,suburban,formal k-12 + university,entrepreneur,New York
+410,29.0,30000.0,13.665527361482495,3.0,0.35000000000000003,-0.6000000000000001,-0.4,white,female,christian,urban,formal k-12,white-collar,New York
+411,32.0,30000.0,17.310631701698256,2.0,-0.30000000000000004,0.45,-0.8,white,male,christian,rural,formal k-12,white-collar,New York
+412,23.0,58900.0,12.97277684087902,4.5,-0.1,0.6000000000000001,-0.8,black,female,christian,rural,formal k-12,retired,New York
+413,26.0,42600.0,12.0,5.5,-0.2,-0.05,-0.8,east asian,female,christian,urban,formal k-12 + university,white-collar,New York
+414,25.0,51300.0,13.847519822154943,2.0,0.45,-0.5,0.05,black,male,christian,rural,formal k-12 + university,white-collar,New York
+415,20.0,44700.0,12.0,2.0,0.30000000000000004,0.6000000000000001,-0.5,black,male,christian,urban,formal k-12,white-collar,New York
+416,36.0,59100.0,12.753203201301247,3.5,0.35000000000000003,-0.35000000000000003,-0.8,black,female,hindu,urban,formal k-12 + university,retired,New York
+417,52.0,30000.0,12.0,3.5,0.30000000000000004,-0.4,-0.8,white,female,christian,urban,formal k-12,blue-collar,New York
+418,55.0,50400.0,12.0,3.5,0.1,-0.55,-0.15000000000000002,white,male,christian,suburban,formal k-12,blue-collar,New York
+419,29.0,34300.0,12.0,6.5,-0.5,0.15000000000000002,-0.8,white,male,christian,urban,formal k-12 + university,blue-collar,New York
+420,29.0,58600.0,12.0,5.0,-0.5,-0.6000000000000001,0.0,east asian,female,muslim,urban,formal k-12,retired,New York
+421,36.0,30000.0,14.962276522777943,2.0,-0.2,0.35000000000000003,-0.55,white,male,christian,rural,formal k-12 + university,unemployed,New York
+422,34.0,36500.0,15.262627294684217,2.0,0.4,-0.65,0.65,hispanic,male,jewish,urban,formal k-12 + university,blue-collar,New York
+423,31.0,30000.0,17.370160941141638,5.5,-0.35000000000000003,0.30000000000000004,-0.05,white,male,muslim,urban,formal k-12,white-collar,New York
+424,55.0,32800.0,12.0,4.5,0.05,0.25,-0.8,white,female,christian,urban,vocational,entrepreneur,New York
+425,35.0,70600.0,15.904527642565121,6.5,0.45,-0.7000000000000001,-0.35000000000000003,hispanic,male,hindu,suburban,formal k-12 + university,white-collar,New York
+426,30.0,37100.0,12.0,2.0,-0.1,-0.7000000000000001,-0.4,white,female,christian,urban,formal k-12,retired,New York
+427,28.0,32900.0,12.0,2.0,-0.45,0.35000000000000003,0.6000000000000001,white,female,jewish,suburban,formal k-12 + university,retired,New York
+428,37.0,30000.0,16.03133750350826,2.0,-0.5,-0.7000000000000001,-0.8,white,male,christian,suburban,formal k-12 + university,white-collar,New York
+429,35.0,30000.0,14.682178739245742,5.0,0.15000000000000002,-0.7000000000000001,0.75,hispanic,female,christian,suburban,formal k-12 + university,white-collar,New York
+430,29.0,87800.0,12.0,2.0,-0.30000000000000004,-0.45,-0.45,white,male,muslim,urban,formal k-12 + university,white-collar,New York
+431,25.0,73500.0,12.0,2.0,-0.30000000000000004,0.0,-0.55,white,male,hindu,urban,formal k-12 + university,retired,New York
+432,20.0,30000.0,18.98061665356999,3.5,-0.45,0.75,-0.2,hispanic,male,buddhist,urban,vocational,blue-collar,New York
+433,27.0,30000.0,12.974366115857158,2.5,-0.45,-0.15000000000000002,0.8,white,male,jewish,urban,formal k-12 + university,unemployed,New York
+434,57.0,30000.0,12.0,2.5,-0.5,-0.35000000000000003,-0.7000000000000001,white,male,buddhist,suburban,vocational,white-collar,New York
+435,21.0,31400.0,14.228143038122125,2.5,-0.15000000000000002,-0.2,0.35000000000000003,white,male,christian,suburban,formal k-12 + university,white-collar,New York
+436,20.0,49500.0,12.0,4.5,-0.15000000000000002,-0.25,0.2,hispanic,female,christian,rural,formal k-12 + university,white-collar,New York
+437,20.0,30000.0,12.0,2.5,0.15000000000000002,0.30000000000000004,-0.8,white,male,christian,rural,formal k-12 + university,blue-collar,New York
+438,24.0,96100.0,17.658455744420063,8.0,-0.1,-0.7000000000000001,0.6000000000000001,black,male,christian,suburban,vocational,blue-collar,New York
+439,20.0,129400.0,17.84976388281352,3.5,-0.15000000000000002,0.5,-0.8,white,female,other,urban,formal k-12 + university,blue-collar,New York
+440,51.0,83300.0,13.508385423919632,2.0,0.2,-0.1,0.65,white,male,christian,suburban,formal k-12 + university,white-collar,New York
+441,29.0,74800.0,12.0,2.0,-0.05,0.35000000000000003,-0.65,white,female,other,urban,formal k-12,white-collar,New York
+442,44.0,42900.0,12.0,3.0,-0.30000000000000004,0.7000000000000001,-0.15000000000000002,white,female,christian,suburban,formal k-12,white-collar,New York
+443,30.0,54800.0,12.0,2.0,0.1,0.65,-0.8,black,female,christian,urban,vocational,unemployed,New York
+444,58.0,47200.0,16.91335148179109,7.5,-0.5,-0.30000000000000004,0.5,hispanic,female,hindu,suburban,formal k-12 + university,unemployed,New York
+445,37.0,30000.0,12.039267783385135,6.0,0.2,0.8,-0.4,white,male,muslim,rural,vocational,blue-collar,New York
+446,21.0,39400.0,18.058907241380915,2.0,0.1,0.1,-0.6000000000000001,black,male,hindu,suburban,formal k-12,blue-collar,New York
+447,20.0,74200.0,15.425023455630082,2.0,-0.5,-0.7000000000000001,-0.8,white,female,christian,urban,formal k-12 + university,blue-collar,New York
+448,27.0,51500.0,12.0,2.0,0.05,-0.7000000000000001,0.8,east asian,male,christian,urban,vocational,white-collar,New York
+449,30.0,30000.0,16.87715582848772,4.5,-0.35000000000000003,-0.15000000000000002,0.0,white,male,other,suburban,formal k-12 + university,white-collar,New York
+450,28.0,30000.0,13.78237104440714,4.5,-0.1,-0.35000000000000003,0.15000000000000002,white,female,christian,suburban,formal k-12 + university,blue-collar,New York
+451,27.0,127500.0,12.0,7.0,-0.4,-0.7000000000000001,0.5,hispanic,female,jewish,urban,formal k-12,blue-collar,New York
+452,36.0,46600.0,12.102207694563123,4.5,0.2,-0.7000000000000001,0.25,hispanic,male,christian,urban,vocational,blue-collar,New York
+453,36.0,30000.0,19.71695901763845,2.0,-0.5,-0.5,-0.8,white,female,christian,urban,formal k-12 + university,blue-collar,New York
+454,20.0,93800.0,12.0,3.0,-0.5,0.35000000000000003,-0.8,east asian,female,buddhist,suburban,formal k-12,white-collar,New York
+455,29.0,82100.0,19.255408246753003,3.5,-0.45,0.4,-0.8,hispanic,female,buddhist,rural,formal k-12 + university,blue-collar,New York
+456,24.0,47600.0,12.0,2.0,-0.2,0.55,-0.8,white,female,christian,suburban,formal k-12 + university,blue-collar,New York
+457,37.0,51000.0,14.513251991001855,6.5,-0.5,-0.7000000000000001,-0.5,black,male,christian,suburban,vocational,unemployed,New York
+458,41.0,30000.0,12.0,2.0,-0.5,0.75,-0.8,white,male,christian,suburban,formal k-12,white-collar,New York
+459,30.0,55600.0,12.0,7.5,-0.5,0.05,0.55,white,male,christian,suburban,vocational,unemployed,New York
+460,33.0,85200.0,12.0,6.0,0.1,-0.7000000000000001,-0.8,hispanic,male,other,urban,vocational,white-collar,New York
+461,38.0,30000.0,15.702415616214395,2.0,0.45,-0.7000000000000001,-0.55,hispanic,male,christian,suburban,formal k-12 + university,blue-collar,New York
+462,20.0,59600.0,15.680442147084463,3.0,-0.25,0.75,-0.65,white,nonbinary,christian,urban,formal k-12 + university,white-collar,New York
+463,30.0,30500.0,15.986981645723464,2.0,-0.5,-0.65,-0.8,white,female,christian,suburban,vocational,unemployed,New York
+464,50.0,87700.0,17.152496973741233,8.0,-0.5,0.55,-0.6000000000000001,hispanic,female,christian,suburban,formal k-12,entrepreneur,New York
+465,20.0,35800.0,12.0,2.5,0.45,-0.7000000000000001,0.05,hispanic,female,other,urban,formal k-12 + university,white-collar,New York
+466,28.0,43000.0,12.0,2.0,-0.5,0.5,0.4,white,male,christian,urban,formal k-12 + university,unemployed,New York
+467,28.0,30000.0,12.846482434167994,2.5,-0.5,-0.2,0.15000000000000002,white,female,christian,suburban,formal k-12 + university,blue-collar,New York
+468,28.0,73600.0,14.672212679448178,7.0,-0.5,-0.55,-0.7000000000000001,black,male,other,urban,formal k-12,white-collar,New York
+469,26.0,42500.0,12.0,3.0,-0.15000000000000002,0.15000000000000002,0.55,east asian,female,hindu,urban,vocational,white-collar,New York
+470,20.0,30000.0,16.846507293044155,5.5,0.15000000000000002,-0.15000000000000002,-0.8,white,male,christian,urban,formal k-12 + university,blue-collar,New York
+471,44.0,63600.0,12.0,4.5,-0.1,-0.1,-0.8,east asian,male,christian,suburban,formal k-12,retired,New York
+472,35.0,147300.0,12.863768857066079,2.0,-0.5,0.30000000000000004,-0.4,black,male,christian,urban,formal k-12 + university,white-collar,New York
+473,50.0,65000.0,12.634517764167388,7.0,0.0,0.2,0.2,white,male,muslim,suburban,formal k-12,blue-collar,New York
+474,37.0,54400.0,14.471716450536139,6.5,0.4,-0.7000000000000001,0.05,white,male,christian,rural,formal k-12,white-collar,New York
+475,20.0,30000.0,12.0,2.0,-0.2,-0.35000000000000003,-0.25,white,male,other,rural,formal k-12 + university,white-collar,New York
+476,52.0,30000.0,12.0,2.0,-0.5,-0.55,-0.4,hispanic,male,christian,suburban,formal k-12,white-collar,New York
+477,22.0,30000.0,12.0,2.0,0.45,-0.7000000000000001,-0.30000000000000004,black,male,other,suburban,formal k-12,white-collar,New York
+478,44.0,49400.0,13.312612986664492,3.0,-0.5,0.5,0.0,white,nonbinary,buddhist,suburban,formal k-12 + university,unemployed,New York
+479,23.0,30000.0,17.792943869643796,2.5,0.1,-0.05,-0.6000000000000001,white,male,buddhist,suburban,formal k-12 + university,blue-collar,New York
+480,53.0,51900.0,12.0,4.5,-0.5,-0.7000000000000001,-0.30000000000000004,white,nonbinary,christian,suburban,formal k-12,white-collar,New York
+481,28.0,30000.0,14.115601712491946,6.5,-0.25,-0.55,-0.45,white,female,christian,suburban,formal k-12 + university,retired,New York
+482,43.0,47600.0,16.29546160227861,6.0,-0.5,0.05,0.0,white,male,other,suburban,vocational,blue-collar,New York
+483,54.0,30000.0,12.941548885066586,5.0,-0.5,-0.5,-0.8,east asian,female,christian,rural,vocational,white-collar,New York
+484,20.0,60200.0,12.0,4.0,0.30000000000000004,-0.7000000000000001,-0.1,white,male,hindu,suburban,vocational,white-collar,New York
+485,28.0,49500.0,12.0,5.5,0.2,-0.1,-0.8,white,male,christian,suburban,formal k-12,entrepreneur,New York
+486,36.0,71500.0,18.672995947898308,2.0,-0.25,-0.35000000000000003,-0.75,white,female,christian,urban,formal k-12,blue-collar,New York
+487,37.0,52200.0,12.0,2.0,-0.2,0.6000000000000001,-0.30000000000000004,white,male,christian,urban,formal k-12,retired,New York
+488,35.0,62000.0,19.04175329245115,3.0,-0.25,0.65,-0.30000000000000004,white,nonbinary,other,urban,vocational,white-collar,New York
+489,20.0,41600.0,12.0,2.0,0.1,-0.35000000000000003,-0.8,hispanic,female,christian,rural,formal k-12 + university,retired,New York
+490,33.0,30000.0,12.0,6.0,-0.1,-0.7000000000000001,-0.55,hispanic,male,jewish,suburban,formal k-12 + university,unemployed,New York
+491,38.0,58200.0,13.084474263735963,2.0,-0.5,-0.6000000000000001,0.5,white,male,christian,urban,vocational,blue-collar,New York
+492,26.0,59000.0,12.0,7.5,-0.35000000000000003,-0.7000000000000001,-0.75,white,male,christian,urban,formal k-12 + university,white-collar,New York
+493,20.0,36200.0,16.57662613318847,4.0,0.15000000000000002,-0.7000000000000001,0.05,white,female,christian,suburban,formal k-12 + university,unemployed,New York
+494,59.0,46900.0,17.700241155274966,5.0,-0.5,0.1,-0.7000000000000001,white,male,buddhist,rural,formal k-12,white-collar,New York
+495,20.0,30000.0,14.254656837592249,7.0,-0.25,-0.4,0.15000000000000002,black,male,jewish,suburban,formal k-12 + university,entrepreneur,New York
+496,33.0,30000.0,14.230718570084719,7.0,0.45,-0.30000000000000004,0.45,east asian,female,other,suburban,vocational,entrepreneur,New York
+497,20.0,32200.0,12.0,6.0,-0.05,0.30000000000000004,-0.45,white,male,christian,urban,vocational,blue-collar,New York
+498,58.0,64600.0,12.0,7.0,0.0,-0.7000000000000001,-0.8,white,male,christian,urban,formal k-12 + university,retired,New York
+499,20.0,30000.0,12.0,6.5,-0.5,-0.55,0.15000000000000002,black,female,muslim,rural,formal k-12 + university,blue-collar,New York
+500,50.0,45400.0,12.0,2.0,-0.5,0.8,0.55,white,male,hindu,suburban,formal k-12 + university,blue-collar,New York

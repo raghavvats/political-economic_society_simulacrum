@@ -1,10 +1,10 @@
-from pydantic import BaseModel, Field
-from typing import Dict, List, Optional, Any, Union
+from pydantic import BaseModel, Field, validator
+from typing import Dict, List, Optional, Any, Union, Literal
 from datetime import datetime
 from enum import Enum
 
 # ============================================================================
-# Distribution and Characteristic Models (from schema.py)
+# Base Distribution Models
 # ============================================================================
 
 class ProbabilityPoint(BaseModel):
@@ -21,27 +21,46 @@ class DistributionData(BaseModel):
         description="List of points defining the probability distribution. Can represent normal, custom, multimodal, etc."
     )
 
-    def validate_distribution(self):
-        """Ensure that the sum of probabilities is ~1 for discrete distributions"""
-        total_probability = sum(p.probability for p in self.points)
+    @validator('range')
+    def validate_range(cls, v):
+        if len(v) != 2:
+            raise ValueError("Range must contain exactly two values: [min, max]")
+        if v[0] >= v[1]:
+            raise ValueError("Range minimum must be less than maximum")
+        return v
+
+    @validator('points')
+    def validate_points(cls, v, values):
+        if not v:
+            raise ValueError("Must have at least one probability point")
+        
+        # Check if range exists in values
+        if 'range' in values:
+            min_val, max_val = values['range']
+            for point in v:
+                if point.value < min_val or point.value > max_val:
+                    raise ValueError(f"Point value {point.value} is outside the specified range [{min_val}, {max_val}]")
+        
+        # Validate total probability
+        total_probability = sum(p.probability for p in v)
         if not (0.99 <= total_probability <= 1.01):
-            raise ValueError("Total probability must sum to approximately 1.")
+            raise ValueError(f"Total probability must sum to approximately 1 (got {total_probability})")
+        
+        return v
 
 class CategoricalProbability(BaseModel):
     category: str
     probability: float
+    
+    @validator('probability')
+    def validate_probability(cls, v):
+        if v < 0 or v > 1:
+            raise ValueError("Probability must be between 0 and 1")
+        return v
 
-class PoliticalAffiliationDistribution(BaseModel):
-    economic: DistributionData
-    governance: DistributionData
-    cultural: DistributionData
-
-class NumericalCharacteristics(BaseModel):
-    age: DistributionData
-    income_level: DistributionData
-    years_of_education: DistributionData
-    religiosity: DistributionData
-    political_affiliation: PoliticalAffiliationDistribution
+# ============================================================================
+# Enums for Categorical Values
+# ============================================================================
 
 class RaceEthnicity(str, Enum):
     white = "white"
@@ -89,32 +108,173 @@ class EmploymentStyle(str, Enum):
     executive = "executive/upper management"
     retired = "retired"
 
-class CategoricalCharacteristics(BaseModel):
-    race_ethnicity: List[CategoricalProbability]
-    gender: List[CategoricalProbability]
-    religion: List[CategoricalProbability]
-    urbanization: List[CategoricalProbability]
-    education_style: List[CategoricalProbability]
-    employment_style: List[CategoricalProbability]
+# ============================================================================
+# Demographic Distribution Models (for population characteristics)
+# ============================================================================
+
+class PoliticalAffiliationDistribution(BaseModel):
+    """Distribution of political affiliation dimensions for a demographic"""
+    economic: DistributionData
+    governance: DistributionData
+    cultural: DistributionData
+    
+    @validator('economic', 'governance', 'cultural')
+    def validate_political_range(cls, v):
+        if v.range[0] < -1 or v.range[1] > 1:
+            raise ValueError("Political affiliation values must be between -1 and 1")
+        return v
+
+class NumericalCharacteristicsDistribution(BaseModel):
+    """Distributions of numerical characteristics for a demographic"""
+    age: DistributionData
+    income_level: DistributionData
+    years_of_education: DistributionData
+    religiosity: DistributionData
+    political_affiliation: PoliticalAffiliationDistribution
+    
+    @validator('age')
+    def validate_age_range(cls, v):
+        if v.range[0] < 1 or v.range[1] > 120:
+            raise ValueError("Age must be between 1 and 120")
+        return v
+    
+    @validator('income_level')
+    def validate_income_range(cls, v):
+        if v.range[0] < 0 or v.range[1] > 10000000:  # 10 million
+            raise ValueError("Income must be between 0 and 10,000,000")
+        return v
+    
+    @validator('years_of_education')
+    def validate_education_range(cls, v):
+        if v.range[0] < 0 or v.range[1] > 22:
+            raise ValueError("Years of education must be between 0 and 22")
+        return v
+    
+    @validator('religiosity')
+    def validate_religiosity_range(cls, v):
+        if v.range[0] < 0 or v.range[1] > 10:
+            raise ValueError("Religiosity must be between 0 and 10")
+        return v
+
+class CategoricalProbabilityWithEnum(BaseModel):
+    """A categorical probability with enum validation"""
+    category: str
+    probability: float
+    
+    @validator('probability')
+    def validate_probability(cls, v):
+        if v < 0 or v > 1:
+            raise ValueError("Probability must be between 0 and 1")
+        return v
+
+class CategoricalCharacteristicsDistribution(BaseModel):
+    """Distributions of categorical characteristics for a demographic"""
+    race_ethnicity: List[CategoricalProbabilityWithEnum]
+    gender: List[CategoricalProbabilityWithEnum]
+    religion: List[CategoricalProbabilityWithEnum]
+    urbanization: List[CategoricalProbabilityWithEnum]
+    education_style: List[CategoricalProbabilityWithEnum]
+    employment_style: List[CategoricalProbabilityWithEnum]
     location: str = Field(..., example="New York", description="Free-form geographic location")
+    
+    @validator('race_ethnicity')
+    def validate_race_ethnicity(cls, v):
+        for item in v:
+            if item.category not in [e.value for e in RaceEthnicity]:
+                raise ValueError(f"Invalid race/ethnicity: {item.category}")
+        return v
+    
+    @validator('gender')
+    def validate_gender(cls, v):
+        for item in v:
+            if item.category not in [e.value for e in Gender]:
+                raise ValueError(f"Invalid gender: {item.category}")
+        return v
+    
+    @validator('religion')
+    def validate_religion(cls, v):
+        for item in v:
+            if item.category not in [e.value for e in Religion]:
+                raise ValueError(f"Invalid religion: {item.category}")
+        return v
+    
+    @validator('urbanization')
+    def validate_urbanization(cls, v):
+        for item in v:
+            if item.category not in [e.value for e in Urbanization]:
+                raise ValueError(f"Invalid urbanization: {item.category}")
+        return v
+    
+    @validator('education_style')
+    def validate_education_style(cls, v):
+        for item in v:
+            if item.category not in [e.value for e in EducationStyle]:
+                raise ValueError(f"Invalid education style: {item.category}")
+        return v
+    
+    @validator('employment_style')
+    def validate_employment_style(cls, v):
+        for item in v:
+            if item.category not in [e.value for e in EmploymentStyle]:
+                raise ValueError(f"Invalid employment style: {item.category}")
+        return v
+    
+    @validator('race_ethnicity', 'gender', 'religion', 'urbanization', 'education_style', 'employment_style')
+    def validate_total_probability(cls, v):
+        total = sum(item.probability for item in v)
+        if not (0.99 <= total <= 1.01):
+            raise ValueError(f"Total probability must sum to approximately 1 (got {total})")
+        return v
+
+class DemographicDistribution(BaseModel):
+    """Complete distribution model for a demographic"""
+    numerical: NumericalCharacteristicsDistribution
+    categorical: CategoricalCharacteristicsDistribution
+
+# ============================================================================
+# Individual Agent Characteristic Models (for single agents)
+# ============================================================================
+
+class PoliticalAffiliation(BaseModel):
+    """Political affiliation values for an individual agent"""
+    economic: float = Field(..., ge=-1, le=1)
+    governance: float = Field(..., ge=-1, le=1)
+    cultural: float = Field(..., ge=-1, le=1)
+
+class AgentNumericalCharacteristics(BaseModel):
+    """Numerical characteristics for an individual agent"""
+    age: float = Field(..., ge=1, le=120)
+    income_level: float = Field(..., ge=0, le=10000000)
+    years_of_education: float = Field(..., ge=0, le=22)
+    religiosity: float = Field(..., ge=0, le=10)
+    political_affiliation: PoliticalAffiliation
+
+class AgentCategoricalCharacteristics(BaseModel):
+    """Categorical characteristics for an individual agent"""
+    race_ethnicity: RaceEthnicity
+    gender: Gender
+    religion: Religion
+    urbanization: Urbanization
+    education_style: EducationStyle
+    employment_style: EmploymentStyle
+    location: str
 
 class AgentCharacteristics(BaseModel):
-    numerical: NumericalCharacteristics
-    categorical: CategoricalCharacteristics
+    """Complete characteristics model for an individual agent"""
+    numerical: AgentNumericalCharacteristics
+    categorical: AgentCategoricalCharacteristics
 
 # ============================================================================
-# Database Models (from schemas.py)
+# Database Models (for API and ORM)
 # ============================================================================
 
-# Base models (for shared attributes)
 class AgentBase(BaseModel):
-    numerical_characteristics: Dict[str, Union[int, float]]
-    categorical_characteristics: Dict[str, str]
-
+    """Base model for agent database representation"""
+    numerical_characteristics: Dict[str, Any]  # Will store AgentNumericalCharacteristics as JSON
+    categorical_characteristics: Dict[str, str]  # Will store AgentCategoricalCharacteristics as JSON
 
 class AgentCreate(AgentBase):
     session_id: int
-
 
 class Agent(AgentBase):
     id: int
@@ -123,15 +283,12 @@ class Agent(AgentBase):
     class Config:
         orm_mode = True
 
-
 class SurveyBase(BaseModel):
     name: str
     description: Optional[str] = None
 
-
 class SurveyCreate(SurveyBase):
     pass
-
 
 class Survey(SurveyBase):
     id: int
@@ -140,17 +297,14 @@ class Survey(SurveyBase):
     class Config:
         orm_mode = True
 
-
 class QuestionBase(BaseModel):
     survey_id: int
     text: str
-    response_type: str
+    response_type: Literal["multiple-choice", "free-text", "likert"]
     options: Optional[List[str]] = None
-
 
 class QuestionCreate(QuestionBase):
     pass
-
 
 class Question(QuestionBase):
     id: int
@@ -158,16 +312,15 @@ class Question(QuestionBase):
     class Config:
         orm_mode = True
 
-
 class DemographicsBase(BaseModel):
+    """Base model for demographics database representation"""
     name: str
-    numerical_characteristics: Dict[str, Any]
-    categorical_characteristics: Dict[str, Any]
-
+    numerical_characteristics: Dict[str, Any]  # Will store NumericalCharacteristicsDistribution as JSON
+    categorical_characteristics: Dict[str, Any]  # Will store CategoricalCharacteristicsDistribution as JSON
+    num_agents: int = Field(100, ge=1, le=10000)
 
 class DemographicsCreate(DemographicsBase):
     pass
-
 
 class Demographics(DemographicsBase):
     id: int
@@ -176,15 +329,12 @@ class Demographics(DemographicsBase):
     class Config:
         orm_mode = True
 
-
 class SessionBase(BaseModel):
     survey_id: int
     demographic_id: int
 
-
 class SessionCreate(SessionBase):
     pass
-
 
 class Session(SessionBase):
     id: int
@@ -193,7 +343,6 @@ class Session(SessionBase):
     class Config:
         orm_mode = True
 
-
 class ResponseBase(BaseModel):
     session_id: int
     agent_id: int
@@ -201,10 +350,8 @@ class ResponseBase(BaseModel):
     question_id: int
     response: str
 
-
 class ResponseCreate(ResponseBase):
     pass
-
 
 class Response(ResponseBase):
     id: int
