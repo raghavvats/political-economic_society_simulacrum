@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from sqlalchemy import and_, or_, func
+from sqlalchemy import and_, or_, func, cast, Float, Integer
 from typing import Dict, List, Optional, Any, Union
 from backend.db import models
 from backend.core.schemas import AgentCreate, SurveyCreate, QuestionCreate, DemographicsCreate, SessionCreate, ResponseCreate
@@ -119,33 +119,23 @@ def filter_agents_by_numerical(
     Returns:
         List of agent objects matching the filter
     """
-    filter_expr = f"numerical_characteristics->>'{field}'"
+    # Determine the appropriate cast type based on the value type
+    cast_type = Integer if isinstance(value, int) else Float
     
+    # Extract the field value and cast it to the appropriate type
+    field_value = cast(func.jsonb_extract_path_text(models.Agent.numerical_characteristics, field), cast_type)
+    
+    # Apply the appropriate operator
     if operator == '>':
-        query = db.query(models.Agent).filter(
-            func.cast(func.jsonb_extract_path_text(models.Agent.numerical_characteristics, field), 
-                     func.pg_typeof(value)) > value
-        )
+        query = db.query(models.Agent).filter(field_value > value)
     elif operator == '<':
-        query = db.query(models.Agent).filter(
-            func.cast(func.jsonb_extract_path_text(models.Agent.numerical_characteristics, field), 
-                     func.pg_typeof(value)) < value
-        )
+        query = db.query(models.Agent).filter(field_value < value)
     elif operator == '>=':
-        query = db.query(models.Agent).filter(
-            func.cast(func.jsonb_extract_path_text(models.Agent.numerical_characteristics, field), 
-                     func.pg_typeof(value)) >= value
-        )
+        query = db.query(models.Agent).filter(field_value >= value)
     elif operator == '<=':
-        query = db.query(models.Agent).filter(
-            func.cast(func.jsonb_extract_path_text(models.Agent.numerical_characteristics, field), 
-                     func.pg_typeof(value)) <= value
-        )
+        query = db.query(models.Agent).filter(field_value <= value)
     else:  # '='
-        query = db.query(models.Agent).filter(
-            func.cast(func.jsonb_extract_path_text(models.Agent.numerical_characteristics, field), 
-                     func.pg_typeof(value)) == value
-        )
+        query = db.query(models.Agent).filter(field_value == value)
     
     return query.offset(skip).limit(limit).all()
 
@@ -170,8 +160,10 @@ def filter_agents_by_categorical(
     Returns:
         List of agent objects matching the filter
     """
+    # Use the JSONB containment operator @> for more efficient filtering with GIN index
+    filter_json = {field: value}
     query = db.query(models.Agent).filter(
-        models.Agent.categorical_characteristics[field].astext == value
+        models.Agent.categorical_characteristics.contains(filter_json)
     )
     
     return query.offset(skip).limit(limit).all()
@@ -503,4 +495,67 @@ def get_responses_by_session(db: Session, session_id: int, skip: int = 0, limit:
     """
     return db.query(models.Response).filter(
         models.Response.session_id == session_id
-    ).offset(skip).limit(limit).all() 
+    ).offset(skip).limit(limit).all()
+
+
+def get_responses_by_agent_characteristics(
+    db: Session,
+    numerical_filters: Optional[List[Dict[str, Any]]] = None,
+    categorical_filters: Optional[List[Dict[str, Any]]] = None,
+    skip: int = 0,
+    limit: int = 100
+) -> List[models.Response]:
+    """
+    Retrieve responses based on agent characteristics (both numerical and categorical).
+    
+    Args:
+        db: Database session
+        numerical_filters: List of dictionaries with keys 'field', 'operator', and 'value'
+                          for filtering numerical characteristics
+        categorical_filters: List of dictionaries with keys 'field' and 'value'
+                            for filtering categorical characteristics
+        skip: Number of records to skip
+        limit: Maximum number of records to return
+    
+    Returns:
+        List of response objects from agents matching the specified characteristics
+    """
+    # Start with a base query joining responses with agents
+    query = db.query(models.Response).join(models.Agent, models.Response.agent_id == models.Agent.id)
+    
+    # Apply numerical filters if provided
+    if numerical_filters:
+        for filter_item in numerical_filters:
+            field = filter_item['field']
+            operator = filter_item.get('operator', '=')
+            value = filter_item['value']
+            
+            # Determine the appropriate cast type based on the value type
+            cast_type = Integer if isinstance(value, int) else Float
+            
+            # Extract the field value and cast it to the appropriate type
+            field_value = cast(func.jsonb_extract_path_text(models.Agent.numerical_characteristics, field), cast_type)
+            
+            # Apply the appropriate operator
+            if operator == '>':
+                query = query.filter(field_value > value)
+            elif operator == '<':
+                query = query.filter(field_value < value)
+            elif operator == '>=':
+                query = query.filter(field_value >= value)
+            elif operator == '<=':
+                query = query.filter(field_value <= value)
+            else:  # '='
+                query = query.filter(field_value == value)
+    
+    # Apply categorical filters if provided
+    if categorical_filters:
+        for filter_item in categorical_filters:
+            field = filter_item['field']
+            value = filter_item['value']
+            
+            # Use the JSONB containment operator @> for more efficient filtering with GIN index
+            filter_json = {field: value}
+            query = query.filter(models.Agent.categorical_characteristics.contains(filter_json))
+    
+    return query.offset(skip).limit(limit).all() 

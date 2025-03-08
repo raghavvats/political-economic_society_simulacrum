@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, ForeignKey, String, DateTime, Text, CheckConstraint
+from sqlalchemy import Column, Integer, ForeignKey, String, DateTime, Text, CheckConstraint, Index
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import relationship
 from backend.db.database import Base
@@ -66,6 +66,11 @@ class Agent(Base):
     session_id = Column(Integer, ForeignKey('sessions.id'), nullable=False)
     numerical_characteristics = Column(JSONB, nullable=False)
     categorical_characteristics = Column(JSONB, nullable=False)
+
+    __table_args__ = (
+        Index('ix_agents_numerical_characteristics', numerical_characteristics, postgresql_using='gin'),
+        Index('ix_agents_categorical_characteristics', categorical_characteristics, postgresql_using='gin'),
+    )
 
     session = relationship("Session", back_populates="agents")
     responses = relationship("Response", back_populates="agent")
